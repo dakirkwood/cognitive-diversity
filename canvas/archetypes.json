@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "label": "Disciplined Pragmatist",
+    "dimensions": {
+      "power_distance": "high",
+      "individualism": "high",
+      "uncertainty_avoidance": "high",
+      "time_orientation": "short-term",
+      "indulgence": "low"
+    },
+    "behavioral_story": "This session runs like a demanding project review board. The Arbiter expects evidence, not speculation — bring the data or bring a mitigation plan. Positions compete on their merits, the agenda moves at pace, and the metric of success is what gets decided and shipped this quarter."
+  },
+  {
+    "id": 2,
+    "label": "Exploratory Facilitator",
+    "dimensions": {
+      "power_distance": "low",
+      "individualism": "low",
+      "uncertainty_avoidance": "low",
+      "time_orientation": "long-term",
+      "indulgence": "high"
+    },
+    "behavioral_story": "This session has the feel of a design thinking workshop with a skilled facilitator. Every voice is equally invited, promising tangents are explored before being parked, and the question underneath every subtopic is: what does this mean for how we build something that lasts? Ambiguity is a feature, not a problem to be resolved immediately."
+  },
+  {
+    "id": 3,
+    "label": "Institutional Steward",
+    "dimensions": {
+      "power_distance": "high",
+      "individualism": "low",
+      "uncertainty_avoidance": "high",
+      "time_orientation": "long-term",
+      "indulgence": "low"
+    },
+    "behavioral_story": "This session has the gravity of a large established organization making a durable decision. Seniority shapes whose framing anchors the discussion, the group works toward alignment rather than competition, proof and precedent are non-negotiable, and the horizon of concern extends well past the next release cycle."
+  },
+  {
+    "id": 4,
+    "label": "Focused Collaborator",
+    "dimensions": {
+      "power_distance": "low",
+      "individualism": "low",
+      "uncertainty_avoidance": "low",
+      "time_orientation": "short-term",
+      "indulgence": "low"
+    },
+    "behavioral_story": "This session feels like a well-run sprint planning meeting. All voices are equal, the group actively seeks consensus over winning arguments, uncertainty is tolerable, but the agenda is tight and the goal is to decide and move — not to open every door. Efficiency and alignment coexist."
+  },
+  {
+    "id": 5,
+    "label": "Competitive Explorer",
+    "dimensions": {
+      "power_distance": "low",
+      "individualism": "high",
+      "uncertainty_avoidance": "low",
+      "time_orientation": "short-term",
+      "indulgence": "high"
+    },
+    "behavioral_story": "This session has the energy of a venture pitch room. No hierarchy — the best idea wins, full stop. Ambiguity and speed are comfortable companions, exploratory threads get run before being cut, and the implicit question is always: what can we actually do right now that could be significant?"
+  },
+  {
+    "id": 6,
+    "label": "Visionary Director",
+    "dimensions": {
+      "power_distance": "high",
+      "individualism": "high",
+      "uncertainty_avoidance": "low",
+      "time_orientation": "long-term",
+      "indulgence": "high"
+    },
+    "behavioral_story": "This session moves like a visionary founder's strategy offsite. Strong directional opinions from senior voices anchor the framing, the strongest ideas compete openly, big-picture implications matter more than immediate feasibility, and when a tangent shows genuine potential the Arbiter lets it run."
+  },
+  {
+    "id": 7,
+    "label": "Engineering Review",
+    "dimensions": {
+      "power_distance": "low",
+      "individualism": "low",
+      "uncertainty_avoidance": "high",
+      "time_orientation": "short-term",
+      "indulgence": "high"
+    },
+    "behavioral_story": "This session has the rigor of a safety-critical engineering review. Everyone is equally accountable — no hierarchy shields a bad call. The group builds consensus carefully, the Arbiter pushes hard for data and edge case analysis before any commitment, and exploring a thorny failure mode is encouraged rather than tabled."
+  },
+  {
+    "id": 8,
+    "label": "Directive Lead",
+    "dimensions": {
+      "power_distance": "high",
+      "individualism": "low",
+      "uncertainty_avoidance": "low",
+      "time_orientation": "short-term",
+      "indulgence": "low"
+    },
+    "behavioral_story": "This session runs like a directive team lead's standup before a critical deployment. Direction comes from the top, the group aligns around the decision rather than re-litigating it, the Arbiter doesn't demand full analysis before moving, and the measure of a good session is how many things get closed."
+  },
+  {
+    "id": 9,
+    "label": "Peer Review",
+    "dimensions": {
+      "power_distance": "low",
+      "individualism": "high",
+      "uncertainty_avoidance": "high",
+      "time_orientation": "long-term",
+      "indulgence": "low"
+    },
+    "behavioral_story": "This session has the deliberate weight of an academic tenure committee. No one's title matters — the work stands on its own merits. Positions compete through rigor and evidence, the Arbiter resists any resolution that lacks demonstrated reasoning, and the standard of success is a decision that will hold up to scrutiny long after the session ends."
+  }
+]

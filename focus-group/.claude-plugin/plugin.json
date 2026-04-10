@@ -1,0 +1,20 @@
+{
+  "name": "focus-group",
+  "version": "1.0.0",
+  "description": "Simulates cognitive profile testing using a team of persona agents with Big Five personality composites and neurodivergent advocates. Supports browser navigation, document evaluation, and scenario assessment modes.",
+  "author": {
+    "name": "dK"
+  },
+  "keywords": [
+    "usability",
+    "ux",
+    "personas",
+    "cognitive-profiles",
+    "accessibility",
+    "focus-group",
+    "user-testing",
+    "neurodivergent",
+    "big-five"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,125 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "canvas-seed-profiles",
+  "title": "Canvas Seed Profiles",
+  "description": "Validation schema for /canvas seed profile files. A seed file is an array of instance profiles, one per parallel discussion session.",
+  "type": "array",
+  "minItems": 3,
+  "maxItems": 5,
+  "items": {
+    "type": "object",
+    "required": ["instance_label", "cultural_profile", "agent_profiles"],
+    "additionalProperties": false,
+    "properties": {
+      "instance_label": {
+        "type": "string",
+        "description": "Human-readable label for this instance (e.g., 'Group A', 'Group B').",
+        "pattern": "^Group [A-E]$"
+      },
+      "cultural_profile": {
+        "type": "object",
+        "description": "Hofstede cultural dimension values for this instance. Applied to the Arbiter's facilitation behavior.",
+        "required": [
+          "power_distance",
+          "individualism",
+          "uncertainty_avoidance",
+          "time_orientation",
+          "indulgence"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "power_distance": {
+            "type": "string",
+            "enum": ["high", "low"],
+            "description": "High: hierarchy shapes facilitation and call order. Low: all perspectives treated as equal authorities."
+          },
+          "individualism": {
+            "type": "string",
+            "enum": ["high", "low"],
+            "description": "High: positions compete on merits. Low: facilitation pushes toward consensus."
+          },
+          "uncertainty_avoidance": {
+            "type": "string",
+            "enum": ["high", "low"],
+            "description": "High: evidence and risk mitigation demanded before resolution. Low: ambiguity tolerated; Deferred is a valid outcome."
+          },
+          "time_orientation": {
+            "type": "string",
+            "enum": ["long-term", "short-term"],
+            "description": "Long-term: sustainability and future implications emphasized. Short-term: immediate deliverables and current velocity emphasized."
+          },
+          "indulgence": {
+            "type": "string",
+            "enum": ["high", "low"],
+            "description": "High: exploratory discussion allowed; tangents may be followed. Low: strict agenda adherence; tangents parked immediately."
+          }
+        }
+      },
+      "agent_profiles": {
+        "type": "object",
+        "description": "Big Five (OCEAN) psychological profiles for each of the five perspective agents. Applied to each agent's spawn prompt argumentation preamble.",
+        "required": [
+          "strategist",
+          "architect",
+          "delivery_lead",
+          "experience_advocate",
+          "innovator"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "strategist": { "$ref": "#/definitions/big_five_profile" },
+          "architect": { "$ref": "#/definitions/big_five_profile" },
+          "delivery_lead": { "$ref": "#/definitions/big_five_profile" },
+          "experience_advocate": { "$ref": "#/definitions/big_five_profile" },
+          "innovator": { "$ref": "#/definitions/big_five_profile" }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "big_five_profile": {
+      "type": "object",
+      "description": "One agent's Big Five (OCEAN) profile. All values are continuous 0.0–1.0. For any given dimension, the five agents within an instance must span at least a 0.4 range (max - min >= 0.4).",
+      "required": [
+        "openness",
+        "conscientiousness",
+        "extraversion",
+        "agreeableness",
+        "neuroticism"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "openness": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Openness to experience. High: unconventional framings, comfort with ambiguity. Low: proven approaches, literal framing."
+        },
+        "conscientiousness": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Conscientiousness. High: demands specificity and systematic tradeoff analysis. Low: accepts directional answers, intuitive arguments."
+        },
+        "extraversion": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Extraversion. High: longer responses, engages actively with others. Low: concise, domain-scoped responses."
+        },
+        "agreeableness": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Agreeableness. High: seeks merit in others, proposes compromise. Low: leads with objections, sustains disagreement."
+        },
+        "neuroticism": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Neuroticism. High: surfaces risks and failure modes, hedges. Low: opportunity-focused, states positions with confidence."
+        }
+      }
+    }
+  }
+}
