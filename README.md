@@ -16,32 +16,6 @@ Cognitive Diversity creates productive deliberation in a synthetic environment a
 | `/focus-group` | Cognitive profile usability screening with 7 persona agents |
 | `/perspectives` | Generate, list, and validate custom domain-specific perspectives |
 
-## Installation
-
-Clone the repo:
-
-```bash
-git clone https://github.com/dakirkwood/cognitive-diversity-skills.git ~/plugins/cognitive-diversity-skills
-```
-
-Add to `~/.claude/settings.json`:
-
-```json
-{
-  "extraKnownMarketplaces": {
-    "dk-cognitive-diversity": {
-      "source": {
-        "source": "directory",
-        "path": "~/plugins/cognitive-diversity-skills"
-      }
-    }
-  },
-  "enabledPlugins": {
-    "cognitive-diversity-skills@dk-cognitive-diversity": true
-  }
-}
-```
-
 ## How It Works
 
 ### `/brainstorm` — One mind, three lenses
